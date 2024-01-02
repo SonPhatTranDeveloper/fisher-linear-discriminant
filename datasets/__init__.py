@@ -3,8 +3,8 @@ import matplotlib.pyplot as plt
 
 
 # Generate two 2d gaussian blobs
-blob_1 = np.random.multivariate_normal(mean=[5, 0], cov=np.eye(2) , size=30)
-blob_2 = np.random.multivariate_normal(mean=[10, 0], cov=np.eye(2), size=30)
+blob_1 = np.random.multivariate_normal(mean=[5, 0], cov=np.array([[1.6, 0.8], [0.8, 1.6]]) , size=30)
+blob_2 = np.random.multivariate_normal(mean=[10, 0], cov=np.array([[1.6, 0.8], [0.8, 1.6]]), size=30)
 
 if __name__ == "__main__":
     # Display the blobs
